@@ -803,6 +803,84 @@
         </div>
     </div>
 
+<!-- Container (Software Section) -->
+<div id="software" class="container-fluid section-software">
+	<div class="row">
+		<h2>Software</h2>
+	</div>
+
+	</div>
+	
+
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>pyDNMFk</strong>: Python Distributed Non Negative Matrix Factorization with determination of hidden features</h3>
+                        <h4><strong>Manish Bhattarai</strong>, Ben Nebgen , Erik Skau , Maksim Eren , Gopinath Chennupati ,Raviteja Vangara ,  Hirsto Djidjev , John Patchett , James Ahrens , Boian Alexandrov</h4>
+			<h3>
+				 <a href="https://github.com/lanl/pyDNMFk" onclick="getOutboundLink('https://github.com/lanl/pyDNMFk'); return false;" target="_blank"><button class="button">Github</button></a>
+				 <a href="https://lanl.github.io/pyDNMFk/" onclick="getOutboundLink('https://lanl.github.io/pyDNMFk/'); return false;" target="_blank"><button class="button">Documentation</button></a>
+ 				 <a href="https://zenodo.org/record/4722448" onclick="getOutboundLink('https://zenodo.org/record/4722448'); return false;" target="_blank"><button class="button">Zenodo</button></a>
+			
+			</h3>
+		</div>
+	</div>
+	
+	    <div class="row">
+		<div class="col-sm-2 col-sm-offset-2">
+			<img src="images/pyDNMFk_RD500.png" alt="Github" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-6">
+			<h5 class="h5-small"><p>pyDNMFk is a software package for applying non-negative matrix factorization in a distributed fashion to large datasets. It can minimize the difference between reconstructed data and the original data through various norms (Frobenius, KL-divergence). Additionally, the Custom Clustering algorithm allows for automated determination for the number of Latent features. pyDNMFk Scales from laptops to clusters. The library is convenient on a laptop. It can be installed easily with conda or pip and extends the matrix decomposition from a single core to numerous cores across nodes. pyDNMFk is efficient and has been tested on powerful servers across LANL and Oakridge scaling beyond 1000+ nodes. This library facilitates the transition between single-machine to large scale cluster so as to enable users to both start simple and scale up when necessary.		</div>
+        </div>
+	
+	
+	
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>pyDNTNK</strong>:  Python Distributed Non-Negative Tensor Networks</h3>
+                        <h4><strong>Manish Bhattarai</strong>, Erik Skau , Phan Minh Duc Truong , Maksim Eren , Namita Kharat , Gopinath Chennupati ,Raviteja Vangara ,  Hirsto Djidjev , Boian Alexandrov</h4>
+			<h3>
+				 <a href="https://github.com/lanl/pyDNTNK" onclick="getOutboundLink('https://github.com/lanl/pyDNTNK'); return false;" target="_blank"><button class="button">Github</button></a>
+				 <a href="https://lanl.github.io/pyDNTNK/" onclick="getOutboundLink('https://lanl.github.io/pyDNTNK/'); return false;" target="_blank"><button class="button">Documentation</button></a>
+ 				 <a href="https://zenodo.org/record/5004490" onclick="getOutboundLink('https://zenodo.org/record/5004490'); return false;" target="_blank"><button class="button">Zenodo</button></a>
+			
+			</h3>
+		</div>
+	</div>
+	
+	    <div class="row">
+		<div class="col-sm-2 col-sm-offset-2">
+			<img src="images/distntt.png" alt="Github" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-6">
+			<h5 class="h5-small"><p>pyDNTNK is a software package for applying non-negative Hierarchical Tensor decompositions such as Tensor train and Hierarchical Tucker decompositons in a distributed fashion to large datasets. It is built on top of pyDNMFk. Tensor train (TT) and Hierarchical Tucker(HT) are state-of-the-art tensor network introduced for factorization of high-dimensional tensors. These methods transform the initial high-dimensional tensor in a network of low dimensional tensors that requires only a linear storage. Many real-world data,such as, density, temperature, population, probability, etc., are non-negative and for an easy interpretation, the algorithms preserving non-negativity are preferred. Here, we introduce the distributed non-negative Hierarchical tensor decomposition tools and demonstrate their scalability and the compression on synthetic and real world big datasets.		</div>
+        </div>
+	
+
+
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>pyCP_APR</strong>:  Python CP-APR library</h3>
+                        <h4>Maksim Eren , Juston S. Moore , Erik Skau , <strong>Manish Bhattarai</strong>, Gopinath Chennupati , Boian Alexandrov</h4>
+			<h3>
+				 <a href="https://github.com/lanl/pyCP_APR" onclick="getOutboundLink('https://github.com/lanl/pyCP_APR'); return false;" target="_blank"><button class="button">Github</button></a>
+				 <a href="https://lanl.github.io/pyCP_APR/" onclick="getOutboundLink('https://lanl.github.io/pyCP_APR/'); return false;" target="_blank"><button class="button">Documentation</button></a>
+ 				 <a href="https://zenodo.org/record/4840598" onclick="getOutboundLink('https://zenodo.org/record/4840598'); return false;" target="_blank"><button class="button">Zenodo</button></a>
+			
+			</h3>
+		</div>
+	</div>
+	
+	    <div class="row">
+		<div class="col-sm-2 col-sm-offset-2">
+			<img src="images/cpapr.png" alt="Github" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-6">
+			<h5 class="h5-small"><p>pyCP_APR is a Python library for tensor decomposition and anomaly detection. It is designed for the fast analysis of large datasets by accelerating computation speed using GPUs. pyCP_APR uses the CANDECOMP/PARAFAC Alternating Poisson Regression (CP-APR) tensor factorization algorithm utilizing both Numpy and PyTorch backend. While the Numpy backend can be used for the analysis of both sparse and dense tensors, PyTorch backend provides faster decomposition of large and sparse tensors on the GPU. pyCP_APR's Scikit-learn like API allows comfortable interaction with the library, and include the methods for anomaly detection via the p-values obtained from the CP-APR factorization. The anomaly detection methods via the p-values optained from CP-APR was introduced by Eren et al. using the Unified Host and Network Dataset.		</div>
+        </div>
+
+
+
 
 
 <!-- Container (Publications) -->
