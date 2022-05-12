@@ -548,6 +548,93 @@
 
 	</div>
 	
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h3><strong>Arxiv Preprint</strong>: Distributed non-negative RESCAL with Automatic Model Selection for Exascale Data</h3>
+                        <h4><strong>Bhattarai,M. </strong>, Kharat, N., Skau, E., Nebgen, B., Djidjev, H., Rajopadhye, S., Smith, J.P. & Alexandrov, B.</h4>
+            <h3>
+                 <a href="https://arxiv.org/abs/2202.09512" onclick="getOutboundLink('https://arxiv.org/abs/2202.09512'); return false;" target="_blank"><button class="button">Arxiv Preprint</button></a>
+
+            
+            </h3>
+        </div>
+    </div>
+
+
+        <div class="row">
+        <div class="col-sm-2 col-sm-offset-2">
+            <img src="images/rescal.png" alt="Arxiv" class="img-responsive"></img>
+        </div>
+        <div class="col-sm-6">
+            <h5 class="h5-small"><p> With the boom in the development of computer hardware and software, social media, IoT platforms, and communications, there has been an exponential growth in the volume of data produced around the world. Among these data, relational datasets are growing in popularity as they provide unique insights regarding the evolution of communities and their interactions. Relational datasets are naturally non-negative, sparse, and extra-large. Relational data usually contain triples, (subject, relation, object), and are represented as graphs/multigraphs, called knowledge graphs, which need to be embedded into a low-dimensional dense vector space. Among various embedding models, RESCAL allows learning of relational data to extract the posterior distributions over the latent variables and to make predictions of missing relations. However, RESCAL is computationally demanding and requires a fast and distributed implementation to analyze extra-large real-world datasets. Here we introduce a distributed non-negative RESCAL algorithm for heterogeneous CPU/GPU architectures with automatic selection of the number of latent communities (model selection), called pyDRESCALk. We demonstrate the correctness of pyDRESCALk with real-world and large synthetic tensors, and the efficacy showing near-linear scaling that concurs with the theoretical complexities. Finally, pyDRESCALk determines the number of latent communities in an 11-terabyte dense and 9-exabyte sparse synthetic tensor    </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h3><strong>Arxiv Preprint</strong>: Distributed Out-of-Memory NMF of Dense and Sparse Data on CPU/GPU Architectures with Automatic Model Selection for Exascale Data </h3>
+                        <h4>Boureima, I., <strong>Bhattarai,M. </strong>, Eren, M., Skau, E., Romero, P., Eidenbenz, S. & Alexandrov, B.</h4>
+            <h3>
+                 <a href="https://arxiv.org/abs/2202.09518" onclick="getOutboundLink('https://arxiv.org/abs/2202.09518'); return false;" target="_blank"><button class="button">Arxiv Preprint</button></a>
+
+            
+            </h3>
+        </div>
+    </div>
+
+        
+
+        <div class="row">
+        <div class="col-sm-2 col-sm-offset-2">
+            <img src="images/nmfgpu.png" alt="Arxiv" class="img-responsive"></img>
+        </div>
+        <div class="col-sm-6">
+            <h5 class="h5-small"><p> The need for efficient and scalable big-data analytics methods is more essential than ever due to the exploding size and complexity of globally emerging datasets. Nonnegative Matrix Factorization (NMF) is a well-known explainable unsupervised learning method for dimensionality reduction, latent feature extraction, blind source separation, data mining, and machine learning. In this paper, we introduce a new distributed out-of-memory NMF method, named pyDNMF-GPU, designed for modern heterogeneous CPU/GPU architectures that is capable of factoring exascale-sized dense and sparse matrices. Our method reduces the latency associated with local data transfer between the GPU and host using CUDA streams, and reduces the latency associated with collective communications (both intra-node and inter-node) via NCCL primitives. In addition, sparse and dense matrix multiplications are significantly accelerated with GPU cores, resulting in good scalability. We set new benchmarks for the size of the data being analyzed: in experiments, we measure up to 76x improvement on a single GPU over running on a single 18 core CPU and we show good weak scaling on up to 4096 multi-GPU cluster nodes with approximately 25,000 GPUs, when decomposing a dense 340 Terabyte-size matrix and a 11 Exabyte-size sparse matrix of density 10e-6. Finally, we integrate our method with an automatic model selection method. With this integration, we introduce a new tool that is capable of analyzing, compressing, and discovering explainable latent structures in extremely large sparse and dense data.     </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h3><strong>Arxiv Preprint</strong>: FedSPLIT: One-Shot Federated Recommendation System Based on Non-negative Joint Matrix Factorization and Knowledge Distillation  </h3>
+                        <h4>Eren, M.E., Richards, L.E., <strong>Bhattarai, M.</strong>, Yus, R., Nicholas, C. and Alexandrov, B.S.</h4>
+            <h3>
+                 <a href="https://arxiv.org/abs/2205.02359" onclick="getOutboundLink('https://arxiv.org/abs/2205.02359'); return false;" target="_blank"><button class="button">Arxiv Preprint</button></a>
+
+            
+            </h3>
+        </div>
+    </div>
+
+ 
+
+        <div class="row">
+        <div class="col-sm-2 col-sm-offset-2">
+            <img src="images/fedsplit.png" alt="Arxiv" class="img-responsive"></img>
+        </div>
+        <div class="col-sm-6">
+            <h5 class="h5-small"><p> Non-negative matrix factorization (NMF) with missing-value completion is a well-known effective Collaborative Filtering (CF) method used to provide personalized user recommendations. However, traditional CF relies on the privacy-invasive collection of users' explicit and implicit feedback to build a central recommender model. One-shot federated learning has recently emerged as a method to mitigate the privacy problem while addressing the traditional communication bottleneck of federated learning. In this paper, we present the first unsupervised one-shot federated CF implementation, named FedSPLIT, based on NMF joint factorization. In our solution, the clients first apply local CF in-parallel to build distinct client-specific recommenders. Then, the privacy-preserving local item patterns and biases from each client are shared with the processor to perform joint factorization in order to extract the global item patterns. Extracted patterns are then aggregated to each client to build the local models via knowledge distillation. In our experiments, we demonstrate the feasibility of our approach with standard recommendation datasets. FedSPLIT can obtain similar results than the state of the art (and even outperform it in certain situations) with a substantial decrease in the number of communications.     </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h3><strong>ICCABS 2021</strong>: Single Model Quality Estimation of Protein Structures via Non-negative Tensor Factorization  </h3>
+                        <h4>Kabir, K.L, <strong>Bhattarai, M.</strong>, Alexandrov B. S. & Shehu A</h4>
+            <h3>
+
+            
+            </h3>
+        </div>
+    </div>
+
+                       
+        <div class="row">
+        <div class="col-sm-2 col-sm-offset-2">
+            <img src="images/iccabs.png" alt="Arxiv" class="img-responsive"></img>
+        </div>
+        <div class="col-sm-6">
+            <h5 class="h5-small"><p> Finding the inherent organization in the structure space of a protein molecule is central in many computational studies of proteins. Grouping or clustering tertiary structures of a protein has been leveraged to build representations of the structure-energy landscape, highlight stable and semi-stable structural states, support models of structural dynamics, and connect them to biological function. Over the years, our
+            laboratory has introduced methods to reveal structural states and build models of state-to-state protein dynamics. These methods have also been shown competitive for an orthogonal problem known as model selection, where model refers to a computed tertiary structure. Building on this work, in this paper we present a novel, tensor factorization-based method that doubles as a non-parametric clustering method. While the method has broad applicability, here we focus and demonstrate its e cacy on the estimation of model accuracy (EMA) problem. The method outperforms state-of-the-art methods, including single-model methods that leverage deep neural networks and domain-specific insight. </div>
+        </div>
+
+
 
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
