@@ -550,7 +550,29 @@
 	</div>
 
 	</div>
+   <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h3><strong>Arxiv Preprint</strong>: Distributed Out-of-Memory SVD on CPU/GPU Architectures </h3>
+                        <h4>Boureima, I., <strong>Bhattarai,M. </strong>, Eren, M., Solovyev, N., Djidjev, H. & Alexandrov, B.</h4>
+            <h3>
+                 <a href="https://arxiv.org/abs/2208.08410" onclick="getOutboundLink('https://arxiv.org/abs/2208.08410'); return false;" target="_blank"><button class="button">Arxiv Preprint</button></a>
+
+            
+            </h3>
+        </div>
+    </div>
+
+        
+
+        <div class="row">
+        <div class="col-sm-2 col-sm-offset-2">
+            <img src="images/svd.png" alt="Arxiv" class="img-responsive"></img>
+        </div>
+        <div class="col-sm-6">
+            <h5 class="h5-small"><p> We propose an efficient, distributed, out-of-memory implementation of the truncated singular value decomposition (t-SVD) for heterogeneous (CPU+GPU) high performance computing (HPC) systems. Various implementations of SVD have been proposed, but most only estimate the singular values as an estimation of the singular vectors which can significantly increase the time and memory complexity of the algorithm. In this work, we propose an implementation of SVD based on the power method, which is a truncated singular values and singular vectors estimation method. Memory utilization bottlenecks seen in the power method are typically associated with the computation of the Gram matrix $\mat{A}^T\mat{A}$, which can be significant when $\mat{A}$ is large and dense, or when $\mat{A}$ is super-large and sparse. The proposed implementation is optimized for out-of-memory problems where the memory required to factorize a given matrix is greater than the available GPU memory. We reduce the memory complexity of $\mat{A}^T\mat{A}$ by using a batching strategy where the intermediate factors are computed block by block. We also suppress I/O latency associated with both host-to-device (H2D) and device-to-host (D2H) batch copies by overlapping each batch copy with compute using CUDA streams. Furthermore, we use optimized \textit{NCCL} based communicators to reduce the latency associated with collective communications (both intra-node and inter-node). In addition, sparse and dense matrix multiplications are significantly accelerated with GPU cores (or tensors cores when available), resulting in an implementation with good scaling. We demonstrate the scalability of our distributed out of core SVD algorithm to successfully decompose dense matrix of size 1TB and sparse matrix of size 128PB with 1e-6 sparsity.     </div>
+        </div>
 	
+
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
             <h3><strong>ASHG</strong>: Deep Learning Modeling of Transcription Factor Binding Specificity Using DNA Biophysical Properties</h3>
